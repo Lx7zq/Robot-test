@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-08T23:58:43.433751" rpa="false" schemaversion="5">
+<suite id="s1" name="TestForm" source="C:\Users\LENOVO GAMING\OneDrive\เดสก์ท็อป\Robot\TestForm.robot">
+<test id="s1-t1" name="Successfully Signed Up" line="23">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:43.660234" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:58:43.660234" elapsed="1.835661"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.495895" elapsed="0.011003"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:43.659235" elapsed="1.847663"/>
+</kw>
+<kw name="Input TH Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.508897" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<arg>id=nameTitleTha</arg>
+<arg>${title}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.507895" elapsed="0.086022"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.593917" level="INFO">Typing text 'เปรมปรีย์' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.593917" elapsed="0.117024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.711941" level="INFO">Typing text 'ดีเลิศ' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.710941" elapsed="0.078742"/>
+</kw>
+<arg>${Valid_Thai_Name_Title}</arg>
+<arg>${Valid_Thai_Firstname}</arg>
+<arg>${Valid_Thai_Lastname}</arg>
+<status status="PASS" start="2024-04-08T23:58:45.507895" elapsed="0.281788"/>
+</kw>
+<kw name="Input EN Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.790663" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<arg>id=nameTitleEng</arg>
+<arg>${title}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.790663" elapsed="0.053014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.844675" level="INFO">Typing text 'Prempree' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.843677" elapsed="0.080016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:45.923693" level="INFO">Typing text 'Deelert' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:45.923693" elapsed="0.078022"/>
+</kw>
+<arg>${Valid_English_Name_Title}</arg>
+<arg>${Valid_English_Firstname}</arg>
+<arg>${Valid_English_Lastname}</arg>
+<status status="PASS" start="2024-04-08T23:58:45.789683" elapsed="0.213029"/>
+</kw>
+<kw name="Input Birthday">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.002712" level="INFO">Selecting options from selection list 'id=birthDate' by value 9.</msg>
+<arg>id=birthDate</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.002712" elapsed="0.053012"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.056723" level="INFO">Selecting options from selection list 'id=birthMonth' by label มีนาคม.</msg>
+<arg>id=birthMonth</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.056723" elapsed="0.050014"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.107735" level="INFO">Selecting options from selection list 'id=birthYear' by label 2547.</msg>
+<arg>id=birthYear</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.107735" elapsed="0.053806"/>
+</kw>
+<arg>${Valid_Day}</arg>
+<arg>${Valid_Month}</arg>
+<arg>${Valid_YearB_E}</arg>
+<status status="PASS" start="2024-04-08T23:58:46.002712" elapsed="0.158829"/>
+</kw>
+<kw name="Input ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.162542" level="INFO">Typing text '8710778989098' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>${id_card}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.162542" elapsed="0.089022"/>
+</kw>
+<arg>${Valid_ID_Card}</arg>
+<status status="PASS" start="2024-04-08T23:58:46.162542" elapsed="0.089022"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.252561" level="INFO">Typing text 'IsNotPassword1' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.252561" elapsed="0.094025"/>
+</kw>
+<arg>${Valid_Password}</arg>
+<status status="PASS" start="2024-04-08T23:58:46.251564" elapsed="0.095022"/>
+</kw>
+<kw name="Input Phone Number">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.347584" level="INFO">Typing text '0748194728' into text field 'id=mobile'.</msg>
+<arg>id=mobile</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.347584" elapsed="0.080019"/>
+</kw>
+<arg>${Valid_Phone_number}</arg>
+<status status="PASS" start="2024-04-08T23:58:46.346586" elapsed="0.081017"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.428604" level="INFO">Typing text '654259007@webmail.npru.ac.th' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.428604" elapsed="0.118756"/>
+</kw>
+<arg>${Valid_Email_Webmail}</arg>
+<status status="PASS" start="2024-04-08T23:58:46.428604" elapsed="0.118756"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.547599" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.547599" elapsed="0.008006"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:46.547599" elapsed="0.008006"/>
+</kw>
+<kw name="Click Button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.556604" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click()
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.556604" elapsed="0.014947"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:46.556604" elapsed="0.014947"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Submitting...</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.572549" elapsed="0.008002"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.677514" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:58:46.677514" level="FAIL">Page should have contained text 'Signed up successfully' but did not.</msg>
+<arg>Signed up successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-04-08T23:58:46.581552" elapsed="0.097957">Page should have contained text 'Signed up successfully' but did not.</status>
+</kw>
+<doc>ผู้ใช้สามารถลงทะเบียนสำเร็จด้วยข้อมูลที่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:58:43.658235" elapsed="3.021274">Page should have contained text 'Signed up successfully' but did not.</status>
+</test>
+<test id="s1-t2" name="Check Invalid Name TH" line="38">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:46.683508" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:58:46.682500" elapsed="1.654686"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:58:48.337186" elapsed="0.010000"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:46.682500" elapsed="1.664686"/>
+</kw>
+<kw name="Input TH Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:48.348186" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<arg>id=nameTitleTha</arg>
+<arg>${title}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T23:58:48.348186" elapsed="0.095996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:48.445183" level="INFO">Typing text 'Prempree' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:48.444182" elapsed="0.115251"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:48.560431" level="INFO">Typing text 'ดีเลิศ' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:48.559433" elapsed="0.080018"/>
+</kw>
+<arg>${Valid_Thai_Name_Title}</arg>
+<arg>${Valid_English_Firstname}</arg>
+<arg>${Valid_Thai_Lastname}</arg>
+<status status="PASS" start="2024-04-08T23:58:48.348186" elapsed="0.291265"/>
+</kw>
+<kw name="Verify Invalid Name_TH_Only">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:48.734516" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:58:48.734516" level="FAIL">Page should have contained text 'ต้องเป็นภาษาไทยเท่านั้น' but did not.</msg>
+<arg>ต้องเป็นภาษาไทยเท่านั้น</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-04-08T23:58:48.640450" elapsed="0.095065">Page should have contained text 'ต้องเป็นภาษาไทยเท่านั้น' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-04-08T23:58:48.640450" elapsed="0.095065">Page should have contained text 'ต้องเป็นภาษาไทยเท่านั้น' but did not.</status>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับชื่อไทยที่ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:58:46.681504" elapsed="2.054011">Page should have contained text 'ต้องเป็นภาษาไทยเท่านั้น' but did not.</status>
+</test>
+<test id="s1-t3" name="Check Invalid Name EN" line="44">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:48.737514" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:58:48.737514" elapsed="1.650889"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:58:50.389404" elapsed="0.009001"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:48.737514" elapsed="1.660891"/>
+</kw>
+<kw name="Input EN Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:50.400407" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<arg>id=nameTitleEng</arg>
+<arg>${title}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T23:58:50.399404" elapsed="0.082020"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:50.481424" level="INFO">Typing text 'เปรมปรีย์' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:50.481424" elapsed="0.112024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:50.594448" level="INFO">Typing text 'Deelert' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:50.594448" elapsed="0.085020"/>
+</kw>
+<arg>${Valid_English_Name_Title}</arg>
+<arg>${Valid_Thai_Firstname}</arg>
+<arg>${Valid_English_Lastname}</arg>
+<status status="PASS" start="2024-04-08T23:58:50.399404" elapsed="0.280064"/>
+</kw>
+<kw name="Verify Invalid Name_EN_Only">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:50.774514" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:58:50.774514" level="FAIL">Page should have contained text 'ต้องเป็นภาษาอังกฤษเท่านั้น' but did not.</msg>
+<arg>ต้องเป็นภาษาอังกฤษเท่านั้น</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-04-08T23:58:50.680468" elapsed="0.095044">Page should have contained text 'ต้องเป็นภาษาอังกฤษเท่านั้น' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-04-08T23:58:50.679468" elapsed="0.096044">Page should have contained text 'ต้องเป็นภาษาอังกฤษเท่านั้น' but did not.</status>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับชื่ออังกฤษที่ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:58:48.736514" elapsed="2.038998">Page should have contained text 'ต้องเป็นภาษาอังกฤษเท่านั้น' but did not.</status>
+</test>
+<test id="s1-t4" name="Check Invalid ID Card" line="50">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:50.778511" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:58:50.778511" elapsed="1.630111"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:58:52.408622" elapsed="0.010001"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:50.778511" elapsed="1.640112"/>
+</kw>
+<kw name="Input ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:52.418623" level="INFO">Typing text 'W1709800405722' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>${id_card}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:58:52.418623" elapsed="0.136031"/>
+</kw>
+<arg>W1709800405722</arg>
+<status status="PASS" start="2024-04-08T23:58:52.418623" elapsed="0.136031"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:52.555654" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>${SCROLL_SCRIPT_DOWN}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:58:52.555654" elapsed="0.005001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-08T23:58:54.561354" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-08T23:58:52.560655" elapsed="2.000699"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:54.562366" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:58:54.562366" elapsed="0.008993"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:54.561354" elapsed="0.010005"/>
+</kw>
+<kw name="Click Button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:54.572356" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click()
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:58:54.572356" elapsed="0.008004"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:54.571359" elapsed="0.009001"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:59.866490" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:58:59.866490" level="FAIL">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</msg>
+<arg>ต้องเป็นตัวเลขเท่านั้น</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-04-08T23:58:54.581359" elapsed="5.286131">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-04-08T23:58:59.867490" elapsed="0.000000"/>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับหมายเลขบัตรประชาชนที่ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:58:50.777511" elapsed="9.089979">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Check Invalid Password" line="61">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:58:59.870492" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:58:59.870492" elapsed="1.950580"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:59:01.821072" elapsed="0.010003"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:58:59.870492" elapsed="1.960583"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:01.832074" level="INFO">Typing text 'IsNotPassword' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:59:01.832074" elapsed="0.207048"/>
+</kw>
+<arg>IsNotPassword</arg>
+<status status="PASS" start="2024-04-08T23:59:01.831075" elapsed="0.208047"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:02.041122" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>${SCROLL_SCRIPT_DOWN}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:02.040122" elapsed="0.021004"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-08T23:59:04.063393" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-08T23:59:02.063126" elapsed="2.000267"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:04.064396" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:04.064396" elapsed="0.011001"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:04.064396" elapsed="0.011001"/>
+</kw>
+<kw name="Click Button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:04.076396" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click()
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:04.076396" elapsed="0.012005"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:04.075397" elapsed="0.013004"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:09.363141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:59:09.363141" level="FAIL">Text 'รหัสผ่านต้องมีอย่างน้อยหนึ่งตัวเลข' did not appear in 5 seconds.</msg>
+<arg>รหัสผ่านต้องมีอย่างน้อยหนึ่งตัวเลข</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-04-08T23:59:04.089402" elapsed="5.274741">Text 'รหัสผ่านต้องมีอย่างน้อยหนึ่งตัวเลข' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-04-08T23:59:09.364143" elapsed="0.000000"/>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับรหัสผ่านไม่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:58:59.868491" elapsed="9.495652">Text 'รหัสผ่านต้องมีอย่างน้อยหนึ่งตัวเลข' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t6" name="Check Invalid Phone_number" line="72">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:09.368143" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:59:09.368143" elapsed="1.690911"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:59:11.059054" elapsed="0.011002"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:09.367143" elapsed="1.702913"/>
+</kw>
+<kw name="Input Phone Number">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:11.071058" level="INFO">Typing text '0748194728' into text field 'id=mobile'.</msg>
+<arg>id=mobile</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:59:11.071058" elapsed="0.182546"/>
+</kw>
+<arg>0748194728</arg>
+<status status="PASS" start="2024-04-08T23:59:11.070056" elapsed="0.183548"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:11.255605" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>${SCROLL_SCRIPT_DOWN}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:11.254607" elapsed="0.043006"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-08T23:59:13.298979" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-08T23:59:11.297613" elapsed="2.001366"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:13.300610" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:13.300610" elapsed="0.011996"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:13.299624" elapsed="0.013982"/>
+</kw>
+<kw name="Click Button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:13.314606" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click()
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:13.314606" elapsed="0.012003"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:13.313606" elapsed="0.013003"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:18.603956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:59:18.603956" level="FAIL">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</msg>
+<arg>ต้องเป็นตัวเลขเท่านั้น</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-04-08T23:59:13.326609" elapsed="5.277347">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-04-08T23:59:18.604958" elapsed="0.000000"/>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับเบอร์โทรศัพท์ไม่ถูดต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:59:09.366143" elapsed="9.238815">Text 'ต้องเป็นตัวเลขเท่านั้น' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t7" name="Check Invalid Email_Webmail" line="83">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:18.606958" level="INFO">Opening browser 'Chrome' to base url 'https://loginform-three-black.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T23:59:18.606958" elapsed="1.654962"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:59:20.262918" elapsed="0.010002"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:18.606958" elapsed="1.666963"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:20.273921" level="INFO">Typing text 'Prempree@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T23:59:20.273921" elapsed="0.181042"/>
+</kw>
+<arg>Prempree@gmail.com</arg>
+<status status="PASS" start="2024-04-08T23:59:20.273921" elapsed="0.181042"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:20.456963" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>${SCROLL_SCRIPT_DOWN}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:20.455962" elapsed="0.013005"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-08T23:59:22.470395" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-08T23:59:20.469966" elapsed="2.000429"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:22.471389" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:22.471389" elapsed="0.010005"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:22.470395" elapsed="0.010999"/>
+</kw>
+<kw name="Click Button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:22.483393" level="INFO">Executing JavaScript:
+document.getElementById('submitbtn').click()
+Without any arguments.</msg>
+<arg>document.getElementById('submitbtn').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-04-08T23:59:22.482393" elapsed="0.010001"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:59:22.482393" elapsed="0.011003"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:59:27.571441" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:59:27.571441" level="FAIL">Text 'ต้องเป็นอีเมลที่มีชื่อโดเมนที่ถูกต้อง' did not appear in 5 seconds.</msg>
+<arg>ต้องเป็นอีเมลที่มีชื่อโดเมนที่ถูกต้อง</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-04-08T23:59:22.493396" elapsed="5.078045">Text 'ต้องเป็นอีเมลที่มีชื่อโดเมนที่ถูกต้อง' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-04-08T23:59:27.572440" elapsed="0.000000"/>
+</kw>
+<doc>ตรวจสอบข้อความผิดพลาดสำหรับEmailไม่ถูกต้อง</doc>
+<status status="FAIL" start="2024-04-08T23:59:18.605957" elapsed="8.966483">Text 'ต้องเป็นอีเมลที่มีชื่อโดเมนที่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2024-04-08T23:58:43.434753" elapsed="44.138688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="7" skip="0" id="s1" name="TestForm">TestForm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
